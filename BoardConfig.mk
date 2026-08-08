@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/transsion/X6885
+DEVICE_PATH := device/infinix/X6885
 
 # Architecture
 TARGET_ARCH := arm64
