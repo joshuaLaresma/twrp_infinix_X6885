@@ -13,8 +13,8 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Product Specifics
 PRODUCT_NAME := twrp_X6885
 PRODUCT_DEVICE := X6885
-PRODUCT_BRAND := Transsion
-PRODUCT_MODEL := Transsion X6885
-PRODUCT_MANUFACTURER := TRANSSION
+PRODUCT_BRAND := Infinix
+PRODUCT_MODEL := Infinix X6885
+PRODUCT_MANUFACTURER := INFINIX
 
-PRODUCT_GMS_CLIENTID_BASE := android-transsion
+PRODUCT_GMS_CLIENTID_BASE := android-infinix
