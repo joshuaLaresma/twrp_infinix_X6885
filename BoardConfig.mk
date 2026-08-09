@@ -69,7 +69,6 @@ BOARD_MAIN_PARTITION_LIST += \
     product \
     system \
     system_ext \
-    system_dlkm \
     vendor \
     vendor_dlkm
 
