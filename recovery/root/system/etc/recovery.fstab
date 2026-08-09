@@ -1,9 +1,19 @@
-# mount point	fstype		device			[device2]
+# mount point	fstype		device						[device2]
+/system		erofs		system						flags=logical;first_stage_mount
+/system		ext4		system						flags=logical;first_stage_mount
+/vendor		erofs		vendor						flags=logical;first_stage_mount
+/vendor		ext4		vendor						flags=logical;first_stage_mount
+/product	erofs		product						flags=logical;first_stage_mount
+/product	ext4		product						flags=logical;first_stage_mount
+/system_ext	erofs		system_ext					flags=logical;first_stage_mount
+/system_ext	ext4		system_ext					flags=logical;first_stage_mount
+/odm		erofs		odm						flags=logical;first_stage_mount
+/odm		ext4		odm						flags=logical;first_stage_mount
+/vendor_dlkm	erofs		vendor_dlkm					flags=logical;first_stage_mount
+/vendor_dlkm	ext4		vendor_dlkm					flags=logical;first_stage_mount
+/odm_dlkm	erofs		odm_dlkm					flags=logical;first_stage_mount
+/odm_dlkm	ext4		odm_dlkm					flags=logical;first_stage_mount
+/system_dlkm	erofs		system_dlkm					flags=logical;first_stage_mount
+/system_dlkm	ext4		system_dlkm					flags=logical;first_stage_mount
+/data		f2fs		/dev/block/by-name/userdata			flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption
 
-/boot		emmc		boot
-/cache		ext4		/dev/block/mmcblk0p4
-/data		ext4		/dev/block/mmcblk0p5
-/misc		emmc		misc
-/recovery	emmc		recovery
-/sdcard		vfat		/dev/block/mmcblk0p6
-/system		ext4		/dev/block/mmcblk0p3

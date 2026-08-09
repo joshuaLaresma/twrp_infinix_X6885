@@ -69,6 +69,7 @@ BOARD_MAIN_PARTITION_LIST += \
     product \
     system \
     system_ext \
+    system_dlkm \
     vendor \
     vendor_dlkm
 
@@ -86,6 +87,10 @@ TARGET_COPY_OUT_SYSTEM := system
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
+
+# Filesystem EROFS Support
+BOARD_HAS_EROFS := true
+TW_INCLUDE_EROFS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6789
@@ -159,7 +164,7 @@ TW_CUSTOM_BATTERY_POS := 790
 ALLOW_MISSING_DEPENDENCIES := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := X6885
+TARGET_OTA_ASSERT_DEVICE := X6885,Infinix-X6885,HOT_60_PRO,X6885-OP
 
 # Brightness
 TW_DEFAULT_BRIGHTNESS := 2047
